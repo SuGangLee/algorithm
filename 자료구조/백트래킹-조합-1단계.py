@@ -1,6 +1,5 @@
 #탐사여부 - 결과 리스트 - 재귀함수 : 깊이가 M이 되면 반복문 탈출, 탐색하지 않았을 경우에 진행 (for 중복제거) , 탐색시작 시 탐색 여부 바꾸고 탐색 내용 추가, 탐색 후 탐색 내용 pop)
-
-
+# N=4, M=2인 경우 1,2 pop 1 append 1,3 pop 1 append 1,4 와 같이 반복된다. 
 N, M  = map(int,input().split())
 
 visited = [False]*N
