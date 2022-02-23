@@ -1,13 +1,14 @@
 #1. union , find 연산으로 이루어짐 
 
-#특정 원소가 속한 집합 찾기
+#특정 원소가 속한 집합 찾기: 경로 미단축 
 """def find_parent(parent,x): #이렇게 되면 
     if parent[x] != x:
         return find_parent(parent,parent[x])
     return x """
+
 #경로압축기법 소스코드 -> 각 노드에 대하여 find 함수를 호출한 이후에 해당 노드의 루트노드가 바로 부모노드가 된다. 
 # 즉, union 연산 시 루트노드에 더 빠르게 접근 가능!
-def find_parent(parent,x): #이렇게 되면 
+def find_parent(parent,x):
     if parent[x] != x:
         parent[x] = find_parent(parent,parent[x])
     return parent[x]
