@@ -9,7 +9,7 @@ end = max(arr)
 total = 0
 while start<=end:
     mid = (start + end)//2
-    print("mid:",mid)
+    
     for i in arr:
         if i < mid:
             continue
