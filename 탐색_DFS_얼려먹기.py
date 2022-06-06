@@ -1,5 +1,5 @@
 n,m = map(int,input().split())
-
+#n=행, m=열
 #이차원 리스트 입력받기!!!
 graph = []
 for i in range(n):

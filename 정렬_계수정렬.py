@@ -4,9 +4,9 @@
 # 가장 큰 데이터 값만큼의 크기를 가진 별도의 리스트를 선언하여 데이터의 값과 동일한 인덱스의 데이터를 1씩 증가시킨다
 
 import random
-arr = [ random.randint(15) for _ in range(100)]
+arr = [ random.randint(15) for _ in range(100)] #100개의 데이터가 1~15 사이로 존재 
 
-sort_list = [0]*(max(arr)+1)
+sort_list = [0]*(max(arr)+1) 
 
 for i in range(len(arr)):
     sort_list[arr[i]] +=1 

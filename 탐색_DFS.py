@@ -1,5 +1,5 @@
 #깊이우선, stack - 재귀함수
-
+#연결되어있는거 찾을 때 
 def dfs(graph,v,visited):
     visited[v] = True # 현재노드 방문처리
     print(v,end=' ')
